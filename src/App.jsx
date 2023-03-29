@@ -20,12 +20,7 @@ function App() {
       </Typography>
       <div>
         {catagories?.map((ele) => (
-          <Button
-            key={ele}
-            variant="outlined"
-            color="inherit"
-            sx={{ m: 2, p: 2 }}
-          >
+          <Button key={ele} variant="outlined" color="inherit" sx={{ m: 2 }}>
             {ele}
           </Button>
         ))}

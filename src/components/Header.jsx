@@ -1,5 +1,6 @@
 import { AppBar, Box, Button, Toolbar } from "@mui/material";
 import airCampus_logo from "../assets/logoaircampus.png";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import React from "react";
 
 const Header = () => {
@@ -11,11 +12,24 @@ const Header = () => {
             src={airCampus_logo}
             style={{ height: "65px", width: "200px", paddingTop: "20px" }}
           />
-          <Button variant="contained" size="large" sx={{ m: 3 }}>
+          <Button
+            variant="contained"
+            size="large"
+            sx={{ m: 3 }}
+            endIcon={<KeyboardArrowDownIcon />}
+          >
             Programs
           </Button>
         </div>
         <Box>
+          <Button
+            color="inherit"
+            variant="text"
+            size="large"
+            endIcon={<KeyboardArrowDownIcon />}
+          >
+            More
+          </Button>
           <Button color="inherit" variant="outlined" size="large">
             Start Learning
           </Button>
