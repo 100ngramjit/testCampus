@@ -2,6 +2,8 @@ import { Button, Typography } from "@mui/material";
 import "./App.css";
 import Header from "./components/Header";
 
+import ImageCarousal from "./components/ImageCarousal";
+
 const catagories = [
   "Popular",
   "Data Science",
@@ -13,6 +15,7 @@ function App() {
   return (
     <>
       <Header />
+      <ImageCarousal />
       <Typography variant="h2">High-growth programs</Typography>
       <Typography variant="p">
         We design and deliver industry-relevant programs with access to top
