@@ -1,6 +1,7 @@
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import "./App.css";
 import AchievementsList from "./components/AchievementsList";
+import AluminiCardCarousal from "./components/AluminiCardCarousal";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 
@@ -33,6 +34,7 @@ function App() {
           ))}
         </Box>
       </Box>
+      <AluminiCardCarousal />
       <Box sx={{ my: 8 }}>
         <Typography variant="h3">Measurable milestones</Typography>
         <Typography variant="p">
