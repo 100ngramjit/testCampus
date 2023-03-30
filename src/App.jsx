@@ -18,7 +18,7 @@ function App() {
     <>
       <Header />
       <ImageCarousal />
-      <Box sx={{ m: 8 }}>
+      <Box sx={{ my: 8 }}>
         <Typography variant="h2">High-growth programs</Typography>
         <Typography variant="p">
           We design and deliver industry-relevant programs with access to top
@@ -32,7 +32,7 @@ function App() {
           ))}
         </Box>
       </Box>
-      <Box sx={{ m: 8 }}>
+      <Box sx={{ my: 8 }}>
         <Typography variant="h2">Measurable transformations</Typography>
         <Typography variant="p">
           We offer programs with placement assistance to help our learners find
@@ -40,7 +40,7 @@ function App() {
         </Typography>
         <AchievementsList />
       </Box>
-      <Box sx={{ m: 8 }}>
+      <Box sx={{ my: 8 }}>
         <Typography variant="h2">Where our learners work</Typography>
         <Typography variant="p">
           Programs with built-in career and placement assistance for our
