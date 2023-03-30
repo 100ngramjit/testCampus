@@ -3,11 +3,11 @@ import "./App.css";
 import AchievementsList from "./components/AchievementsList";
 import ContactUs from "./components/ContactUs";
 import AluminiCardCarousal from "./components/AluminiCardCarousal";
-import Footer from "./components/Footer";
 import Header from "./components/Header";
 
 import ImageCarousal from "./components/ImageCarousal";
 import MediaCard from "./components/MediaCard";
+import Footer from "./components/footer/Footer";
 
 const catagories = [
   "Popular",
