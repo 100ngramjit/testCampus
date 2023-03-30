@@ -1,6 +1,7 @@
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import "./App.css";
 import AchievementsList from "./components/AchievementsList";
+import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 
@@ -65,6 +66,7 @@ function App() {
           ))}
         </Grid>
       </Box>
+      <ContactUs />
       <Footer />
     </>
   );
