@@ -1,6 +1,6 @@
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import "./App.css";
-import AchievementsList from "./components/AchievementsList";
+import AchievementsList from "./components/achievements/AchievementsList";
 import ContactUs from "./components/ContactUs";
 import AluminiCardCarousal from "./components/AluminiCardCarousal";
 import Header from "./components/Header";
@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       <Header />
-      {/* <ImageCarousal /> */}
+      <ImageCarousal />
       <Box sx={{ my: 8 }}>
         <Typography variant="h3">High-growth programs</Typography>
         <Typography variant="p">
@@ -36,11 +36,6 @@ function App() {
         </Box>
       </Box>
       <Box sx={{ my: 8 }}>
-        <Typography variant="h3">Measurable milestones</Typography>
-        <Typography variant="p">
-          We offer programs with placement assistance to help our learners find
-          success
-        </Typography>
         <Container>
           <AchievementsList />
         </Container>
