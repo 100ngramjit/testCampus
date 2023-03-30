@@ -1,0 +1,39 @@
+@media screen and (min-width: 768px) {
+  .carousel-root
+    .carousel
+    .slide
+    .slider-wrapper
+    .slider-container
+    .slider-list {
+    width: calc(100% / 3);
+  }
+  .carousel-root
+    .carousel
+    .slide
+    .slider-wrapper
+    .slider-container
+    .slider-list
+    .slide {
+    width: calc(100% / 3 - 1rem);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .carousel-root
+    .carousel
+    .slide
+    .slider-wrapper
+    .slider-container
+    .slider-list {
+    width: calc(100% / 4);
+  }
+  .carousel-root
+    .carousel
+    .slide
+    .slider-wrapper
+    .slider-container
+    .slider-list
+    .slide {
+    width: calc(100% / 4 - 1rem);
+  }
+}

@@ -2,8 +2,8 @@ import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import "./App.css";
 import AchievementsList from "./components/achievements/AchievementsList";
 import ContactUs from "./components/ContactUs";
-import AluminiCardCarousal from "./components/AluminiCardCarousal";
 import Header from "./components/header/Header";
+import AluminiCardCarousal from "./components/AluminiCardCarousal/AluminiCardCarousal";
 
 import ImageCarousal from "./components/ImageCarousal";
 import MediaCard from "./components/MediaCard";
@@ -53,7 +53,7 @@ function App() {
           Hear our learners talk about their learning experience and share the
           impact on their professional lives
         </Typography>
-        {/* <AluminiCardCarousal /> */}
+        <AluminiCardCarousal />
       </Box>
       <Box sx={{ my: 8 }}>
         <Typography variant="h3"> Our media presence </Typography>
