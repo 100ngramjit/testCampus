@@ -1,4 +1,8 @@
 import React, { useContext } from "react";
+import PhoneAndroidOutlinedIcon from "@mui/icons-material/PhoneAndroidOutlined";
+
+import EmailIcon from "@mui/icons-material/Email";
+
 import { MobileViewContext } from "../context/WindowSizeContext";
 
 function ContactUs() {
@@ -6,12 +10,13 @@ function ContactUs() {
   console.log("first", isMobileView);
   return (
     <div>
-      {" "}
-      <h3>We are here for you!</h3>
-      <p>
-        We encourage our learners to ask questions directly and reach out to us
-        anytime
-      </p>
+      <div className="text-center">
+        <h3 className="section_header">We are here for you!</h3>
+        <p>
+          We encourage our learners to ask questions directly and reach out to
+          us anytime
+        </p>
+      </div>
       <div className="container mt-5">
         <div class="row gx-5">
           <div class="col-6">
@@ -20,12 +25,12 @@ function ContactUs() {
               alt=""
             />
           </div>
-          <div class="col-3 ms-5">
-            <p className="text-start mb-5">
+          <div class="col-4 ms-5 text-start">
+            <p className=" mb-5">
               Enter your details and our Learning Consultant will reach out to
               you shortly
             </p>
-            <form className="text-start">
+            <form className="mb-5">
               <div class="form-group mb-3">
                 <input
                   type="text"
@@ -55,6 +60,17 @@ function ContactUs() {
                 Call me
               </button>
             </form>
+            <div className="text-center">
+              <p>YOU CAN ALSO REACH US AT</p>
+              <div className="shadow p-3 mb-3 rounded">
+                <PhoneAndroidOutlinedIcon />
+                <span className="h5 ms-2">8989622874</span>
+              </div>
+              <div className="shadow p-3 mb-5 rounded">
+                <EmailIcon />
+                <span className="h5 ms-2"> admissions@aircampus.in </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
