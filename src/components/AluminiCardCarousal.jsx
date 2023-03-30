@@ -11,10 +11,10 @@ const AluminiCardCarousal = () => {
       autoPlay={true}
       centerMode={true}
       centerSlidePercentage="25"
-      interval={3000}
+      interval={2000}
       stopOnHover={false}
       showThumbs={false}
-      transitionTime={300}
+      transitionTime={800}
       swipeable={true}
       emulateTouch={true}
       animation="slide"

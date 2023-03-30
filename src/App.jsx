@@ -34,7 +34,6 @@ function App() {
           ))}
         </Box>
       </Box>
-      <AluminiCardCarousal />
       <Box sx={{ my: 8 }}>
         <Typography variant="h3">Measurable milestones</Typography>
         <Typography variant="p">
@@ -52,7 +51,14 @@ function App() {
           learners to find success and growth
         </Typography>
       </Box>
-
+      <Box sx={{ my: 8 }}>
+        <Typography variant="h3"> Hear straight from our learners</Typography>
+        <Typography variant="p">
+          Hear our learners talk about their learning experience and share the
+          impact on their professional lives
+        </Typography>
+        <AluminiCardCarousal />
+      </Box>
       <Box sx={{ my: 8 }}>
         <Typography variant="h3"> Our media presence </Typography>
         <Typography variant="p">
