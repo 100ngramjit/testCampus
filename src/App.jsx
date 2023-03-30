@@ -3,7 +3,7 @@ import "./App.css";
 import AchievementsList from "./components/achievements/AchievementsList";
 import ContactUs from "./components/ContactUs";
 import AluminiCardCarousal from "./components/AluminiCardCarousal";
-import Header from "./components/Header";
+import Header from "./components/header/Header";
 
 import ImageCarousal from "./components/ImageCarousal";
 import MediaCard from "./components/MediaCard";
