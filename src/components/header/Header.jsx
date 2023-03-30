@@ -12,10 +12,12 @@ import {
 } from "@mui/material";
 import { styled } from "@mui/system";
 import { useTheme } from "@mui/material/styles";
-import airCampus_logo from "../assets/logoaircampus.png";
+import airCampus_logo from "../../assets/logoaircampus.png";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import MenuIcon from "@mui/icons-material/Menu";
 import React from "react";
+
+import "./style.css";
 
 const Logo = styled("img")(({ theme }) => ({
   height: "auto",
@@ -70,7 +72,7 @@ const Header = () => {
 
   return (
     <>
-      <AppBar color="secondary" position="fixed" component="nav">
+      {/* <AppBar color="secondary" position="fixed" component="nav">
         <Toolbar sx={{ justifyContent: "space-between", minHeight: "14vh" }}>
           <Box
             sx={{
@@ -136,7 +138,15 @@ const Header = () => {
       </AppBar>
       <Drawer anchor="left" open={isDrawerOpen} onClose={toggleDrawer(false)}>
         {drawer}
-      </Drawer>
+      </Drawer> */}
+      <nav class="navbar navbar_custom justify-content-between">
+        <div className="container">
+          <img src={airCampus_logo} width="200" />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Start Learning
+          </button>
+        </div>
+      </nav>
     </>
   );
 };
