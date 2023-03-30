@@ -54,7 +54,7 @@ function App() {
       <Box sx={{ my: 8 }}>
         <Typography variant="h3"> Our media presence </Typography>
         <Typography variant="p">
-          Find AirCampus in the media spotlight
+          Find AirCampus in the media spotlightnn
         </Typography>
 
         <Grid container spacing={5} sx={{ p: 2 }}>
