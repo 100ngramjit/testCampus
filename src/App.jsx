@@ -1,10 +1,11 @@
-import { Box, Button, Container, Typography } from "@mui/material";
+import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import "./App.css";
 import AchievementsList from "./components/AchievementsList";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 
 import ImageCarousal from "./components/ImageCarousal";
+import MediaCard from "./components/MediaCard";
 
 const catagories = [
   "Popular",
@@ -48,6 +49,21 @@ function App() {
           Programs with built-in career and placement assistance for our
           learners to find success and growth
         </Typography>
+      </Box>
+
+      <Box sx={{ my: 8 }}>
+        <Typography variant="h3"> Our media presence </Typography>
+        <Typography variant="p">
+          Find AirCampus in the media spotlight
+        </Typography>
+
+        <Grid container spacing={5} sx={{ p: 2 }}>
+          {[1, 2, 3, 4].map((ele) => (
+            <Grid key={ele} item xs={12} sm={6} md={3}>
+              <MediaCard />
+            </Grid>
+          ))}
+        </Grid>
       </Box>
       <Footer />
     </>
