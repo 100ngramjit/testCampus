@@ -6,7 +6,7 @@ const ImageCarousel = () => {
   const images = [
     {
       src: "https://herovired.com/wp-content/uploads/2023/01/webp-old-11-copy.webp",
-      alt: "Image 5",
+      alt: "Image 1",
       text1: "Learning at",
       text2: "your fingertips",
       text3:
