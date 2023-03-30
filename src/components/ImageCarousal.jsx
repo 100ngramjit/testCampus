@@ -12,17 +12,19 @@ const ImageCarousal = () => {
   ];
 
   return (
-    <Carousel
-      infiniteLoop="true"
-      dynamicHeight="true"
-      showStatus={false}
-      showThumbs={false}
-      autoPlay={true}
-    >
-      {images?.map((image) => (
-        <img key={image} src={image} style={{ height: "550px" }} />
-      ))}
-    </Carousel>
+    <div style={{ marginTop: 50 }}>
+      <Carousel
+        infiniteLoop="true"
+        dynamicHeight="true"
+        showStatus={false}
+        showThumbs={false}
+        autoPlay={true}
+      >
+        {images?.map((image) => (
+          <img key={image} src={image} style={{ height: "550px" }} />
+        ))}
+      </Carousel>
+    </div>
   );
 };
 

@@ -1,4 +1,4 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, Container, Typography } from "@mui/material";
 import "./App.css";
 import AchievementsList from "./components/AchievementsList";
 import Footer from "./components/Footer";
@@ -19,7 +19,7 @@ function App() {
       <Header />
       <ImageCarousal />
       <Box sx={{ my: 8 }}>
-        <Typography variant="h2">High-growth programs</Typography>
+        <Typography variant="h3">High-growth programs</Typography>
         <Typography variant="p">
           We design and deliver industry-relevant programs with access to top
           global universities, to create the change makers of tomorrow
@@ -33,15 +33,17 @@ function App() {
         </Box>
       </Box>
       <Box sx={{ my: 8 }}>
-        <Typography variant="h2">Measurable transformations</Typography>
+        <Typography variant="h3">Measurable milestones</Typography>
         <Typography variant="p">
           We offer programs with placement assistance to help our learners find
           success
         </Typography>
-        <AchievementsList />
+        <Container>
+          <AchievementsList />
+        </Container>
       </Box>
       <Box sx={{ my: 8 }}>
-        <Typography variant="h2">Where our learners work</Typography>
+        <Typography variant="h3">Where our learners work</Typography>
         <Typography variant="p">
           Programs with built-in career and placement assistance for our
           learners to find success and growth
