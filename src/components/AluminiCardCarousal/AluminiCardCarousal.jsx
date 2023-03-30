@@ -1,6 +1,7 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
-import AluminiCard from "./AluminiCard";
+import AluminiCard from "../AluminiCard";
+import "./AluminiCardCarousal.css";
 
 const AluminiCardCarousal = () => {
   return (

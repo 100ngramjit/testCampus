@@ -1,71 +1,69 @@
 import * as React from "react";
-import { styled } from "@mui/material/styles";
-import {
-  Card,
-  CardHeader,
-  CardMedia,
-  CardContent,
-  Avatar,
-  Typography,
-  Box,
-} from "@mui/material";
 import logo from "../assets/react.svg";
-
-const StyledCardHeader = styled(CardHeader)(({ theme }) => ({
-  paddingBottom: 0,
-}));
-
-const StyledAvatar = styled(Avatar)(({ theme }) => ({
-  width: theme.spacing(7),
-  height: theme.spacing(7),
-}));
-
-const StyledCardSection = styled(Box)(({ theme }) => ({
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  backgroundColor: theme.palette.grey[200],
-  padding: theme.spacing(1),
-  "& img": {
-    height: theme.spacing(5),
-  },
-}));
 
 function AluminiCard() {
   return (
-    <Card sx={{ maxWidth: 245 }}>
-      <StyledCardSection>
-        <Typography variant="h6" color="green">
-          90% hike
-        </Typography>
-      </StyledCardSection>
-      <StyledCardHeader
-        avatar={
-          <StyledAvatar
+    <div
+      style={{
+        maxWidth: 245,
+        border: "1px solid #ccc",
+        borderRadius: 5,
+        margin: 10,
+        // Use media queries to adjust layout based on screen size
+        "@media (min-width: 768px)": {
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        },
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          backgroundColor: "#f5f5f5",
+          padding: 10,
+        }}
+      >
+        <h6 style={{ margin: 0, color: "green" }}>90% hike</h6>
+      </div>
+      <div style={{ padding: 10 }}>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <img
             src="https://mui.com/static/images/avatar/2.jpg"
             alt="avatar"
+            style={{
+              width: 70,
+              height: 70,
+              borderRadius: "50%",
+              marginRight: 10,
+            }}
           />
-        }
-        title={
-          <Typography pl="0" variant="h6">
-            John Doe
-          </Typography>
-        }
-        subheader="Software Engineer"
-      />
-
-      <CardContent>
-        <Typography variant="body2" color="text.secondary">
+          <div>
+            <h6 style={{ margin: 0 }}>John Doe</h6>
+            <p style={{ margin: 0 }}>Software Engineer</p>
+          </div>
+        </div>
+        <p style={{ marginTop: 10 }}>
           I really appreciate the way how the team is proactive with their
           follow-ups. While there are many EdTech platforms in India, they all
           are missing the personal touch that the team at Hero Vired team
           provides.
-        </Typography>
-      </CardContent>
-      <StyledCardSection>
-        <img src={logo} alt="logo" />
-      </StyledCardSection>
-    </Card>
+        </p>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          backgroundColor: "#f5f5f5",
+          padding: 10,
+        }}
+      >
+        <img src={logo} alt="logo" style={{ height: 25 }} />
+      </div>
+    </div>
   );
 }
 
