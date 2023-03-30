@@ -1,79 +1,3 @@
-// import { AppBar, Box, Button, Toolbar } from "@mui/material";
-// import { styled } from "@mui/system";
-// import { useTheme } from "@mui/material/styles";
-// import airCampus_logo from "../assets/logoaircampus.png";
-// import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-// import React from "react";
-
-// const Logo = styled("img")(({ theme }) => ({
-//   height: "auto",
-//   width: "100%",
-//   [theme.breakpoints.up("sm")]: {
-//     width: "200px",
-//   },
-// }));
-
-// const Header = () => {
-//   const theme = useTheme();
-//   return (
-//     <AppBar color="secondary" position="fixed" component="nav">
-//       <Toolbar sx={{ justifyContent: "space-between", minHeight: "12vh" }}>
-//         <Box
-//           sx={{
-//             display: "flex",
-//             justifyContent: "center",
-//             alignItems: "center",
-//             flexGrow: 1,
-//             [theme.breakpoints.up("sm")]: {
-//               justifyContent: "flex-start",
-//             },
-//           }}
-//         >
-//           <Logo src={airCampus_logo} alt="AirCampus Logo" />
-//           <Button
-//             variant="contained"
-//             size="large"
-//             endIcon={<KeyboardArrowDownIcon />}
-//             sx={{
-//               display: { xs: "none", sm: "inline-flex" },
-//               marginLeft: "16px",
-//             }}
-//           >
-//             Programs
-//           </Button>
-//         </Box>
-//         <Box
-//           sx={{
-//             display: "flex",
-//             justifyContent: "center",
-//             alignItems: "center",
-//           }}
-//         >
-//           <Button
-//             color="inherit"
-//             variant="text"
-//             size="large"
-//             endIcon={<KeyboardArrowDownIcon />}
-//             sx={{ display: { xs: "none", sm: "inline-flex" } }}
-//           >
-//             More
-//           </Button>
-//           <Button
-//             color="inherit"
-//             variant="outlined"
-//             size="large"
-//             sx={{ marginLeft: { xs: "8px", sm: "16px" } }}
-//           >
-//             Start Learning
-//           </Button>
-//         </Box>
-//       </Toolbar>
-//     </AppBar>
-//   );
-// };
-
-// export default Header;
-
 import {
   AppBar,
   Box,
@@ -82,6 +6,7 @@ import {
   IconButton,
   List,
   ListItem,
+  ListItemButton,
   ListItemText,
   Toolbar,
 } from "@mui/material";
@@ -133,12 +58,12 @@ const Header = () => {
       onKeyDown={toggleDrawer(false)}
     >
       <List>
-        <ListItem>
+        <ListItemButton>
           <ListItemText primary="Programs" />
-        </ListItem>
-        <ListItem>
+        </ListItemButton>
+        <ListItemButton>
           <ListItemText primary="More" />
-        </ListItem>
+        </ListItemButton>
       </List>
     </Box>
   );
@@ -146,7 +71,7 @@ const Header = () => {
   return (
     <>
       <AppBar color="secondary" position="fixed" component="nav">
-        <Toolbar sx={{ justifyContent: "space-between", minHeight: "12vh" }}>
+        <Toolbar sx={{ justifyContent: "space-between", minHeight: "14vh" }}>
           <Box
             sx={{
               display: "flex",
@@ -177,6 +102,7 @@ const Header = () => {
                 display: { xs: "none", sm: "inline-flex" },
                 marginLeft: "16px",
               }}
+              disableElevation
             >
               Programs
             </Button>
