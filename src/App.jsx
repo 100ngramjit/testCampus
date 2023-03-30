@@ -1,6 +1,7 @@
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import "./App.css";
 import AchievementsList from "./components/AchievementsList";
+import ContactUs from "./components/ContactUs";
 import AluminiCardCarousal from "./components/AluminiCardCarousal";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -19,7 +20,7 @@ function App() {
   return (
     <>
       <Header />
-      <ImageCarousal />
+      {/* <ImageCarousal /> */}
       <Box sx={{ my: 8 }}>
         <Typography variant="h3">High-growth programs</Typography>
         <Typography variant="p">
@@ -57,12 +58,12 @@ function App() {
           Hear our learners talk about their learning experience and share the
           impact on their professional lives
         </Typography>
-        <AluminiCardCarousal />
+        {/* <AluminiCardCarousal /> */}
       </Box>
       <Box sx={{ my: 8 }}>
         <Typography variant="h3"> Our media presence </Typography>
         <Typography variant="p">
-          Find AirCampus in the media spotlight
+          Find AirCampus in the media spotlightnn
         </Typography>
 
         <Grid container spacing={5} sx={{ p: 2 }}>
@@ -73,6 +74,7 @@ function App() {
           ))}
         </Grid>
       </Box>
+      <ContactUs />
       <Footer />
     </>
   );
