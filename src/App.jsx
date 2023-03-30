@@ -2,6 +2,7 @@ import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import "./App.css";
 import AchievementsList from "./components/AchievementsList";
 import ContactUs from "./components/ContactUs";
+import AluminiCardCarousal from "./components/AluminiCardCarousal";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 
@@ -51,7 +52,14 @@ function App() {
           learners to find success and growth
         </Typography>
       </Box>
-
+      <Box sx={{ my: 8 }}>
+        <Typography variant="h3"> Hear straight from our learners</Typography>
+        <Typography variant="p">
+          Hear our learners talk about their learning experience and share the
+          impact on their professional lives
+        </Typography>
+        <AluminiCardCarousal />
+      </Box>
       <Box sx={{ my: 8 }}>
         <Typography variant="h3"> Our media presence </Typography>
         <Typography variant="p">
