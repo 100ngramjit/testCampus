@@ -24,7 +24,7 @@ function App() {
     <>
       <Header />
       <ImageCarousal />
-      <Box sx={{ my: 8 }}>
+      {/* <Box sx={{ my: 8 }}>
         <Typography variant="h3">High-growth programs</Typography>
         <Typography variant="p">
           We design and deliver industry-relevant programs with access to top
@@ -37,29 +37,21 @@ function App() {
             </Button>
           ))}
         </Box>
-      </Box>
+      </Box> */}
       <Box sx={{ my: 8 }}>
         <Container>
           <AchievementsList />
         </Container>
       </Box>
       <Box sx={{ my: 8 }}>
-        <Typography variant="h3">Where our learners work</Typography>
-        <Typography variant="p">
-          Programs with built-in career and placement assistance for our
-          learners to find success and growth
-        </Typography>
-        <PlacementsCarousal />
+        <Container>
+          <PlacementsCarousal />
+        </Container>
       </Box>
       <Box sx={{ my: 8 }}>
-        <Typography variant="h3"> Hear straight from our learners</Typography>
-        <Typography variant="p">
-          Hear our learners talk about their learning experience and share the
-          impact on their professional lives
-        </Typography>
         <AluminiCardCarousal />
       </Box>
-      <Box sx={{ my: 8 }}>
+      {/* <Box sx={{ my: 8 }}>
         <Typography variant="h3"> Our media presence </Typography>
         <Typography variant="p">
           Find AirCampus in the media spotlightnn
@@ -72,7 +64,7 @@ function App() {
             </Grid>
           ))}
         </Grid>
-      </Box>
+      </Box> */}
       <ContactUs />
       <Footer />
       <HelpButton />

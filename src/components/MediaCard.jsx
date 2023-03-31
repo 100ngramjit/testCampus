@@ -9,20 +9,22 @@ import airCampus_logo from "../assets/logoaircampus.png";
 
 export default function MediaCard() {
   return (
-    <Card sx={{ maxWidth: 275 }}>
-      <CardMedia
-        sx={{ height: 140, width: 275 }}
-        image={airCampus_logo}
-        title="green iguana"
-      />
-      <CardContent>
-        <Typography variant="body2" color="text.secondary">
-          AirCampus's flagship program is ranked #1 in the world
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
+    <>
+      <Card sx={{ maxWidth: 275 }}>
+        <CardMedia
+          sx={{ height: 140, width: 275 }}
+          image={airCampus_logo}
+          title="green iguana"
+        />
+        <CardContent>
+          <Typography variant="body2" color="text.secondary">
+            AirCampus's flagship program is ranked #1 in the world
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <Button size="small">Learn More</Button>
+        </CardActions>
+      </Card>
+    </>
   );
 }
