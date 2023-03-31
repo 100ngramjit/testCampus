@@ -14,6 +14,7 @@ const AluminiCardCarousal = () => {
       </div>
       <Carousel
         showIndicators={false}
+        showArrows={false}
         infiniteLoop={true}
         autoPlay={true}
         centerMode={true}
@@ -21,6 +22,9 @@ const AluminiCardCarousal = () => {
         showThumbs={false}
         swipeable={true}
         emulateTouch={true}
+        interval={2000}
+        transitionTime={2000}
+        showStatus={false}
         animation="slide"
       >
         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18].map(
