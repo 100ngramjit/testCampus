@@ -1,6 +1,7 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
-import * as images from "../assets/placements/images";
+import * as images from "../../assets/placements/images";
+import "./style.css";
 
 function ImageGallery() {
   console.log(images);
@@ -15,11 +16,12 @@ function ImageGallery() {
       </div>
 
       <Carousel
+        className="carousal_parent"
         showIndicators={false}
         infiniteLoop={true}
         autoPlay={true}
         centerMode={true}
-        centerSlidePercentage="20"
+        centerSlidePercentage="25"
         showThumbs={false}
         interval={2000}
         transitionTime={2000}
@@ -28,12 +30,7 @@ function ImageGallery() {
         animation="slide"
       >
         {Object.entries(images).map(([key, value]) => (
-          <img
-            key={key}
-            src={value}
-            alt="gallery"
-            style={{ height: 75, width: 150 }}
-          />
+          <img key={key} src={value} alt="gallery" style={{ width: 180 }} />
         ))}
       </Carousel>
     </>

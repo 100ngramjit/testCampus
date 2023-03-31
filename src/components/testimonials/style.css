@@ -1,0 +1,16 @@
+.alumni_card{
+    width: 300px;
+    border: 1px solid #f5f5f7;
+    border-radius: 5px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    text-align: start
+}
+
+.alumni_background{
+    background-color: #f5f5f7;
+}
+
