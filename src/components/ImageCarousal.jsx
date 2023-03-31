@@ -37,7 +37,7 @@ const ImageCarousel = () => {
   ];
 
   return (
-    <div style={{ marginTop: 50 }}>
+    <div>
       <Carousel
         infiniteLoop={true}
         dynamicHeight={true}
