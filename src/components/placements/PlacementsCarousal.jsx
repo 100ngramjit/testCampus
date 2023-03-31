@@ -22,7 +22,7 @@ function ImageGallery() {
         infiniteLoop={true}
         autoPlay={true}
         centerMode={true}
-        centerSlidePercentage="15"
+        centerSlidePercentage="25"
         showThumbs={false}
         interval={1500}
         transitionTime={2000}
