@@ -13,19 +13,9 @@ import {
 import { styled } from "@mui/system";
 import { useTheme } from "@mui/material/styles";
 import airCampus_logo from "../../assets/logoaircampus.png";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import MenuIcon from "@mui/icons-material/Menu";
 import React from "react";
 
 import "./style.css";
-
-const Logo = styled("img")(({ theme }) => ({
-  height: "auto",
-  width: "75%",
-  [theme.breakpoints.up("sm")]: {
-    width: "200px",
-  },
-}));
 
 const Header = () => {
   const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
@@ -142,7 +132,7 @@ const Header = () => {
       <nav class="navbar navbar_custom justify-content-between">
         <div className="container">
           <img src={airCampus_logo} width="200" />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
             Start Learning
           </button>
         </div>
