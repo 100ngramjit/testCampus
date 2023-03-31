@@ -10,6 +10,7 @@ import PlacementsCarousal from "./components/PlacementsCarousal";
 
 import MediaCard from "./components/MediaCard";
 import Footer from "./components/footer/Footer";
+import HelpButton from "./components/HelpButton";
 
 const catagories = [
   "Popular",
@@ -74,6 +75,7 @@ function App() {
       </Box>
       <ContactUs />
       <Footer />
+      <HelpButton />
     </>
   );
 }
