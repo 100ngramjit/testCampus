@@ -13,19 +13,9 @@ import {
 import { styled } from "@mui/system";
 import { useTheme } from "@mui/material/styles";
 import airCampus_logo from "../../assets/logoaircampus.png";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import MenuIcon from "@mui/icons-material/Menu";
 import React from "react";
 
 import "./style.css";
-
-const Logo = styled("img")(({ theme }) => ({
-  height: "auto",
-  width: "75%",
-  [theme.breakpoints.up("sm")]: {
-    width: "200px",
-  },
-}));
 
 const Header = () => {
   const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);

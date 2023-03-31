@@ -9,12 +9,10 @@ function AluminiCard() {
         border: "1px solid #ccc",
         borderRadius: 5,
         margin: 10,
-        // Use media queries to adjust layout based on screen size
-        "@media (min-width: 768px)": {
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        },
+
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
       }}
     >
       <div
