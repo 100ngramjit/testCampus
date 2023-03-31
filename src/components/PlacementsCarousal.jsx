@@ -10,10 +10,10 @@ function ImageGallery() {
       infiniteLoop={true}
       autoPlay={true}
       centerMode={true}
-      centerSlidePercentage="25"
+      centerSlidePercentage="10"
       showThumbs={false}
-      interval={1000}
-      transitionTime={300}
+      interval={3000}
+      transitionTime={3000}
       swipeable={true}
       emulateTouch={true}
       animation="slide"
@@ -23,7 +23,7 @@ function ImageGallery() {
           key={key}
           src={value}
           alt="gallery"
-          style={{ height: 75, width: 150 }}
+          style={{ height: 35, width: 90 }}
         />
       ))}
     </Carousel>
