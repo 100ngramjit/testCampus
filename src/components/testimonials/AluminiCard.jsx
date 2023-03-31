@@ -1,29 +1,11 @@
 import * as React from "react";
-import logo from "../assets/react.svg";
+import logo from "../../assets/react.svg";
+import "./style.css";
 
 function AluminiCard() {
   return (
-    <div
-      style={{
-        maxWidth: 245,
-        border: "1px solid #ccc",
-        borderRadius: 5,
-        margin: 10,
-
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          backgroundColor: "#f5f5f5",
-          padding: 10,
-        }}
-      >
+    <div className="alumni_card">
+      <div className="d-flex justify-content-center align-items-center w-100 p-3 alumni_background">
         <h6 style={{ margin: 0, color: "green" }}>90% hike</h6>
       </div>
       <div style={{ padding: 10 }}>
@@ -39,26 +21,18 @@ function AluminiCard() {
             }}
           />
           <div>
-            <h6 style={{ margin: 0 }}>John Doe</h6>
-            <p style={{ margin: 0 }}>Software Engineer</p>
+            <h6 className="m-0 fw-bold">John Doe</h6>
+            <p className="m-0 ">Software Engineer</p>
           </div>
         </div>
-        <p style={{ marginTop: 10 }}>
+        <p className="mt-3 fw-light">
           I really appreciate the way how the team is proactive with their
           follow-ups. While there are many EdTech platforms in India, they all
           are missing the personal touch that the team at Hero Vired team
           provides.
         </p>
       </div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          backgroundColor: "#f5f5f5",
-          padding: 10,
-        }}
-      >
+      <div className="alumni_background w-100 d-flex justify-content-center align-items-center p-4">
         <img src={logo} alt="logo" style={{ height: 25 }} />
       </div>
     </div>

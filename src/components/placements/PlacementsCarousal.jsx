@@ -1,6 +1,7 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
-import * as images from "../assets/placements/images";
+import * as images from "../../assets/placements/images";
+import "./style.css";
 
 function ImageGallery() {
   console.log(images);
@@ -15,6 +16,7 @@ function ImageGallery() {
       </div>
 
       <Carousel
+        className="carousal_parent"
         showIndicators={false}
         showArrows={false}
         infiniteLoop={true}
@@ -31,12 +33,7 @@ function ImageGallery() {
         stopOnHover={false}
       >
         {Object.entries(images).map(([key, value]) => (
-          <img
-            key={key}
-            src={value}
-            alt="gallery"
-            style={{ height: 40, width: 100 }}
-          />
+          <img key={key} src={value} alt="gallery" style={{ width: 180 }} />
         ))}
       </Carousel>
     </>
