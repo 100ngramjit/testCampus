@@ -18,16 +18,19 @@ function ImageGallery() {
       <Carousel
         className="carousal_parent"
         showIndicators={false}
+        showArrows={false}
         infiniteLoop={true}
         autoPlay={true}
         centerMode={true}
-        centerSlidePercentage="25"
+        centerSlidePercentage="15"
         showThumbs={false}
-        interval={2000}
+        interval={1500}
         transitionTime={2000}
         swipeable={true}
         emulateTouch={true}
+        showStatus={false}
         animation="slide"
+        stopOnHover={false}
       >
         {Object.entries(images).map(([key, value]) => (
           <img key={key} src={value} alt="gallery" style={{ width: 180 }} />
