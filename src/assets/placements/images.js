@@ -1,0 +1,17 @@
+export { default as image1 } from "./Adobe-Logo.png";
+export { default as image2 } from "./amazon.png";
+export { default as image3 } from "./classplus.webp";
+export { default as image4 } from "./CRED-LOGO2.png";
+export { default as image5 } from "./Flipkart-logo.png";
+export { default as image6 } from "./fynd.webp";
+export { default as image7 } from "./lybrate.webp";
+export { default as image8 } from "./meesho.webp";
+export { default as image9 } from "./microsoft-logo-png-transparent-background-1.png";
+export { default as image10 } from "./ola-electric-logo.png";
+export { default as image11 } from "./paytm-logo.jpeg";
+export { default as image12 } from "./PhonePe-Logo.wine.png";
+export { default as image13 } from "./policybazar-image.png";
+export { default as image14 } from "./publicis-sapient_0.png";
+export { default as image15 } from "./swiggy.webp";
+export { default as image16 } from "./walmart.png";
+export { default as image17 } from "./zomato.webp";

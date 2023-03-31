@@ -6,6 +6,8 @@ import Header from "./components/header/Header";
 import AluminiCardCarousal from "./components/AluminiCardCarousal/AluminiCardCarousal";
 
 import ImageCarousal from "./components/ImageCarousal";
+import PlacementsCarousal from "./components/PlacementsCarousal";
+
 import MediaCard from "./components/MediaCard";
 import Footer from "./components/footer/Footer";
 
@@ -46,6 +48,7 @@ function App() {
           Programs with built-in career and placement assistance for our
           learners to find success and growth
         </Typography>
+        <PlacementsCarousal />
       </Box>
       <Box sx={{ my: 8 }}>
         <Typography variant="h3"> Hear straight from our learners</Typography>

@@ -1,21 +1,16 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import AluminiCard from "../AluminiCard";
-import "./AluminiCardCarousal.css";
 
 const AluminiCardCarousal = () => {
   return (
     <Carousel
-      showStatus={false}
       showIndicators={false}
       infiniteLoop={true}
       autoPlay={true}
       centerMode={true}
       centerSlidePercentage="25"
-      interval={2000}
-      stopOnHover={false}
       showThumbs={false}
-      transitionTime={800}
       swipeable={true}
       emulateTouch={true}
       animation="slide"
