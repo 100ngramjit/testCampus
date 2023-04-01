@@ -12,6 +12,7 @@ import MediaCard from "./components/MediaCard";
 import Footer from "./components/footer/Footer";
 import HelpButton from "./components/HelpButton";
 import FAQ from "./components/FAQ";
+import AssuredFeatures from "./components/AssuredFeatures";
 
 const catagories = [
   "Popular",
@@ -47,6 +48,11 @@ function App() {
       <Box sx={{ my: 8 }}>
         <Container>
           <PlacementsCarousal />
+        </Container>
+      </Box>
+      <Box sx={{ my: 8 }}>
+        <Container>
+          <AssuredFeatures />
         </Container>
       </Box>
       <Box sx={{ my: 8 }}>
