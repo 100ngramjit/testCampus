@@ -1,8 +1,12 @@
-.achievements .icons{
-    font-size: 70px;
-    padding: 12px;
-    background-color: #f8f8f8;
-    color: #fe6b1e ;
-    margin-right: 10px;
-    border-radius: 8px;
+.achievements .icons {
+  font-size: 70px;
+  padding: 12px;
+  background-color: #f8f8f8;
+  color: #fe6b1e;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+
+.text-p-yellow {
+  color: #fe6b1e;
 }

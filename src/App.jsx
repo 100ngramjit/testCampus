@@ -11,6 +11,7 @@ import PlacementsCarousal from "./components/placements/PlacementsCarousal";
 import MediaCard from "./components/MediaCard";
 import Footer from "./components/footer/Footer";
 import HelpButton from "./components/HelpButton";
+import FAQ from "./components/FAQ";
 
 const catagories = [
   "Popular",
@@ -66,6 +67,11 @@ function App() {
         </Grid>
       </Box> */}
       <ContactUs />
+      <Box sx={{ my: 8 }}>
+        <Container>
+          <FAQ />
+        </Container>
+      </Box>
       <Footer />
       <HelpButton />
     </>
