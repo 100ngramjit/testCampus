@@ -18,59 +18,62 @@ import React from "react";
 import "./style.css";
 
 const Header = () => {
-  const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
-
-  const theme = useTheme();
-
-  const toggleDrawer = (isOpen) => (event) => {
-    if (
-      event &&
-      event.type === "keydown" &&
-      (event.key === "Tab" || event.key === "Shift")
-    ) {
-      return;
-    }
-
-    setIsDrawerOpen(isOpen);
-  };
-
-  const drawer = (
-    <Box
-      sx={{
-        width: "200px",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100%",
-        backgroundColor: theme.palette.primary.main,
-      }}
-      role="presentation"
-      onClick={toggleDrawer(false)}
-      onKeyDown={toggleDrawer(false)}
-    >
-      <List>
-        <ListItemButton>
-          <ListItemText primary="Programs" />
-        </ListItemButton>
-        <ListItemButton>
-          <ListItemText primary="More" />
-        </ListItemButton>
-      </List>
-    </Box>
-  );
-
   return (
-    <>
-      <nav class="navbar navbar_custom justify-content-between">
-        <div className="container">
-          <img src={airCampus_logo} width="200" />
-          <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
-            Start Learning
-          </button>
+    // <>
+    //   <nav class="navbar navbar_custom justify-content-between">
+    //     <div className="container">
+    //       <img src={airCampus_logo} width="200" />
+    //       <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
+    //         Start Learning
+    //       </button>
+    //     </div>
+    //   </nav>
+    // </>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+      <div class="container ">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src={airCampus_logo} alt="Logo" height="30" class="mr-2" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">
+                Program
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                How to get in?
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Careers
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                FAQs
+              </a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </>
+      </div>
+    </nav>
   );
 };
 
