@@ -5,7 +5,7 @@ import ContactUs from "./components/ContactUs";
 import Header from "./components/header/Header";
 import AluminiCardCarousal from "./components/AluminiCardCarousal/AluminiCardCarousal";
 
-import ImageCarousal from "./components/ImageCarousal";
+import ImageCarousal from "./components/hero-section/ImageCarousal";
 import PlacementsCarousal from "./components/placements/PlacementsCarousal";
 
 import MediaCard from "./components/MediaCard";

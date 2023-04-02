@@ -1,5 +1,4 @@
-import React from "react";
-import { Carousel } from "react-responsive-carousel";
+import React, { useContext } from "react";
 import AluminiCard from "../testimonials/AluminiCard";
 
 const AluminiCardCarousal = () => {
@@ -12,27 +11,12 @@ const AluminiCardCarousal = () => {
           impact on their professional lives
         </p>
       </div>
-      <Carousel
-        showIndicators={false}
-        showArrows={false}
-        infiniteLoop={true}
-        autoPlay={true}
-        centerMode={true}
-        centerSlidePercentage="25"
-        showThumbs={false}
-        swipeable={true}
-        emulateTouch={true}
-        interval={2000}
-        transitionTime={2000}
-        showStatus={false}
-        animation="slide"
-      >
-        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18].map(
-          (ele) => (
-            <AluminiCard key={ele} />
-          )
-        )}
-      </Carousel>
+      <div className="d-flex flex-wrap justify-content-center g-5">
+        <AluminiCard />
+        <AluminiCard />
+        <AluminiCard />
+        <AluminiCard />
+      </div>
     </>
   );
 };
