@@ -6,35 +6,35 @@ import EmailIcon from "@mui/icons-material/Email";
 import { MobileViewContext } from "../context/WindowSizeContext";
 
 function ContactUs() {
-  const isMobileView = useContext(MobileViewContext);
-  console.log("first", isMobileView);
+  const value = useContext(MobileViewContext);
   return (
     <div>
       <div className="text-center">
         <h3 className="section_header">We are here for you!</h3>
-        <p>
+        <p className="fs-5">
           We encourage our learners to ask questions directly and reach out to
           us anytime
         </p>
       </div>
       <div className="container mt-5">
         <div class="row gx-5">
-          <div class="col-6">
+          <div class="col-12 col-md-6 mb-5">
             <img
               src="https://herovired.com/wp-content/uploads/2023/01/consultation-queries-img.webp"
               alt=""
+              className="img-fluid"
             />
           </div>
-          <div class="col-4 ms-5 text-start">
-            <p className=" mb-5">
+          <div class="col-12 col-md-5 ms-md-5 text-start">
+            <p className=" mb-4 fs-5">
               Enter your details and our Learning Consultant will reach out to
               you shortly
             </p>
-            <form className="mb-5">
+            <form className={`${value ? "text-center" : ""} mb-4`}>
               <div class="form-group mb-3">
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control form-control-lg"
                   id="firstName"
                   placeholder="First Name"
                 />
@@ -42,7 +42,7 @@ function ContactUs() {
               <div class="form-group mb-3">
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control form-control-lg"
                   id="lastName"
                   placeholder="Last Name"
                 />
@@ -50,18 +50,18 @@ function ContactUs() {
               <div class="form-group mb-3">
                 <input
                   type="number"
-                  class="form-control"
+                  class="form-control form-control-lg"
                   id="number"
                   placeholder="9999999999"
                 />
               </div>
 
-              <button type="submit" class="btn btn-outline-dark">
+              <button type="submit" class="btn btn-outline-dark btn-lg">
                 Call me
               </button>
             </form>
             <div className="text-center">
-              <p>YOU CAN ALSO REACH US AT</p>
+              <p className="fs-5">YOU CAN ALSO REACH US AT</p>
               <div className="shadow p-3 mb-3 rounded">
                 <PhoneAndroidOutlinedIcon />
                 <span className="h5 ms-2">8989622874</span>

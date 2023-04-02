@@ -1,0 +1,28 @@
+.carousel-caption {
+  top: 50px;
+  left: 50px;
+  /* right: 0;
+    text-align: center; */
+}
+.carousel-caption h1 {
+  font-size: 48px;
+}
+.carousel-caption p {
+  font-size: 24px;
+  line-height: 1.5;
+}
+@media (max-width: 767px) {
+  .carousel-caption {
+    top: 0px;
+    left: 10px;
+    right: 0;
+    text-align: center;
+  }
+  .carousel-caption h1 {
+    font-size: 18px;
+  }
+  .carousel-caption p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}

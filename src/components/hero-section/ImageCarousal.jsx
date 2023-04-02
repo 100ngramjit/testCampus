@@ -2,6 +2,8 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
+import "./style.css";
+
 const ImageCarousel = () => {
   const images = [
     {
@@ -37,7 +39,7 @@ const ImageCarousel = () => {
   ];
 
   return (
-    <div>
+    <div className="hero-carousel">
       <Carousel
         infiniteLoop={true}
         dynamicHeight={true}
@@ -45,28 +47,13 @@ const ImageCarousel = () => {
         showThumbs={false}
         autoPlay={true}
       >
-        {images.map((image) => (
-          <div key={image.src} style={{ position: "relative" }}>
-            <img src={image.src} alt={image.alt} style={{ height: "550px" }} />
-            <div
-              style={{
-                position: "absolute",
-                top: "50%",
-                left: "0",
-                transform: "translateY(-50%)",
-                width: "50%",
-                textAlign: "left",
-                paddingLeft: "20px",
-                color: "#ffffff",
-                fontSize: "24px",
-                fontWeight: "bold",
-                marginLeft: "24px",
-                textShadow: "1px 1px #000000",
-              }}
-            >
-              <h2 style={{ fontSize: "50px" }}>{image.text1}</h2>
-              <h1 style={{ fontSize: "80px" }}>{image.text2}</h1>
-              <p>{image.text3}</p>
+        {images.map((image, index) => (
+          <div key={index} style={{ position: "relative" }}>
+            <img src={image.src} alt={image.alt} />
+            <div className="carousel-caption">
+              <h1 className="text-start">{image.text1}</h1>
+              <h1 className="text-start">{image.text2}</h1>
+              <p className="text-start">{image.text3}</p>
             </div>
           </div>
         ))}
