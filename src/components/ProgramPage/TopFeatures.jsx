@@ -13,7 +13,7 @@ const TopFeatures = () => {
       <div className="flex-grow-1">
         <img src={girlStudentImg} className="w-100 h-100" alt="Girl student" />
       </div>
-      <div className="flex-grow-1">
+      <div className="flex-grow-1 p-5">
         <h1 className="section_header text-center text-md-start">
           With great power comes great responsibility
         </h1>
