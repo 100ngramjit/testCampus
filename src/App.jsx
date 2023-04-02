@@ -13,6 +13,7 @@ import Footer from "./components/footer/Footer";
 import HelpButton from "./components/HelpButton";
 import FAQ from "./components/FAQ";
 import AssuredFeatures from "./components/AssuredFeatures";
+import ProgramPage from "./components/ProgramPage/ProgramPage";
 
 const catagories = [
   "Popular",
@@ -78,6 +79,7 @@ function App() {
           <FAQ />
         </Container>
       </Box>
+      <ProgramPage />
       <Footer />
       <HelpButton />
     </>
