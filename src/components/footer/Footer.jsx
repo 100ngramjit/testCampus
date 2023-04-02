@@ -39,8 +39,8 @@ export default function Footer() {
         }}
       />
       <div className="container mt-5">
-        <div class="row gx-5">
-          <div class="col-12 col-md-4">
+        <div className="row gx-5">
+          <div className="col-12 col-md-4">
             <h6 className="mb-3 footer_heading">TECHNOLOGY</h6>
             <small className="mb-3 d-block">
               Certificate Program in Full Stack Development with Cloud for Web
@@ -51,7 +51,7 @@ export default function Footer() {
               and Mobile
             </small>
           </div>
-          <div class="col-12 col-md-4">
+          <div className="col-12 col-md-4">
             <h6 className="mb-3 footer_heading">FINANCE & MANAGEMENT</h6>
             <small className="mb-3 d-block">
               Certificate Program in Financial Analysis, Valuation and Risk
@@ -65,7 +65,7 @@ export default function Footer() {
               Certificate Program in Product Management
             </small>
           </div>
-          <div class="col-12 col-md-4">
+          <div className="col-12 col-md-4">
             <h6 className="mb-3 footer_heading">Data Science</h6>
             <small className="mb-3 d-block">
               Accelerator Program in Business Analytics &amp; Data Science

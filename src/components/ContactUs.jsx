@@ -17,46 +17,46 @@ function ContactUs() {
         </p>
       </div>
       <div className="container mt-5">
-        <div class="row gx-5">
-          <div class="col-12 col-md-6 mb-5">
+        <div className="row gx-5">
+          <div className="col-12 col-md-6 mb-5">
             <img
               src="https://herovired.com/wp-content/uploads/2023/01/consultation-queries-img.webp"
               alt=""
               className="img-fluid"
             />
           </div>
-          <div class="col-12 col-md-5 ms-md-5 text-start">
+          <div className="col-12 col-md-5 ms-md-5 text-start">
             <p className=" mb-4 fs-5">
               Enter your details and our Learning Consultant will reach out to
               you shortly
             </p>
             <form className={`${value ? "text-center" : ""} mb-4`}>
-              <div class="form-group mb-3">
+              <div className="form-group mb-3">
                 <input
                   type="text"
-                  class="form-control form-control-lg"
+                  className="form-control form-control-lg"
                   id="firstName"
                   placeholder="First Name"
                 />
               </div>
-              <div class="form-group mb-3">
+              <div className="form-group mb-3">
                 <input
                   type="text"
-                  class="form-control form-control-lg"
+                  className="form-control form-control-lg"
                   id="lastName"
                   placeholder="Last Name"
                 />
               </div>
-              <div class="form-group mb-3">
+              <div className="form-group mb-3">
                 <input
                   type="number"
-                  class="form-control form-control-lg"
+                  className="form-control form-control-lg"
                   id="number"
                   placeholder="9999999999"
                 />
               </div>
 
-              <button type="submit" class="btn btn-outline-dark btn-lg">
+              <button type="submit" className="btn btn-outline-dark btn-lg">
                 Call me
               </button>
             </form>
