@@ -16,22 +16,17 @@ import airCampus_logo from "../../assets/logoaircampus.png";
 import React from "react";
 
 import "./style.css";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
   return (
-    // <>
-    //   <nav class="navbar navbar_custom justify-content-between">
-    //     <div className="container">
-    //       <img src={airCampus_logo} width="200" />
-    //       <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
-    //         Start Learning
-    //       </button>
-    //     </div>
-    //   </nav>
-    // </>
     <nav class="navbar navbar-expand-lg navbar-light bg-light ">
       <div class="container ">
-        <a class="navbar-brand d-flex align-items-center" href="#">
+        <a
+          class="navbar-brand d-flex align-items-center"
+          onClick={() => navigate("/")}
+        >
           <img src={airCampus_logo} alt="Logo" height="30" class="mr-2" />
         </a>
         <button
@@ -51,7 +46,7 @@ const Header = () => {
         >
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">
+              <a class="nav-link" onClick={() => navigate("/programs")}>
                 Program
               </a>
             </li>
@@ -63,11 +58,6 @@ const Header = () => {
             <li class="nav-item">
               <a class="nav-link" href="#">
                 Careers
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                FAQs
               </a>
             </li>
           </ul>
