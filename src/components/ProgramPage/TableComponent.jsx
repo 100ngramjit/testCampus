@@ -4,7 +4,7 @@ const TableComponent = () => {
   return (
     <>
       <h1 className="section_header " style={{ marginBottom: 15 }}>
-        Comparison between Regular & Kalvium Eng.
+        Comparison between Regular & AirCampus Eng.
       </h1>
       <div className="table-responsive">
         <table className="table table-light ">
