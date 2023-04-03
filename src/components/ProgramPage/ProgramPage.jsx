@@ -3,6 +3,7 @@ import ApplyNow from "./ApplyNow";
 import { Box, Container } from "@mui/material";
 import SkillSection from "./SkillSection";
 import TopFeatures from "./TopFeatures";
+import TableComponent from "./TableComponent";
 
 const ProgramPage = () => {
   return (
@@ -19,6 +20,11 @@ const ProgramPage = () => {
       </Box>
       <Box sx={{ my: 8 }}>
         <TopFeatures />
+      </Box>
+      <Box sx={{ my: 8 }}>
+        <Container>
+          <TableComponent />
+        </Container>
       </Box>
     </>
   );

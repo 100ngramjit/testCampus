@@ -8,7 +8,7 @@ const TopFeatures = () => {
   return (
     <div
       className="d-flex flex-column flex-md-row justify-content-md-center align-items-md-center bg-light"
-      style={{ minHeight: "80vh" }}
+      style={{ minHeight: "50vh" }}
     >
       <div className="flex-grow-1">
         <img src={girlStudentImg} className="w-100 h-100" alt="Girl student" />

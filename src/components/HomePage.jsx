@@ -6,8 +6,6 @@ import AluminiCardCarousal from "./AluminiCardCarousal/AluminiCardCarousal";
 
 import ImageCarousal from "./hero-section/ImageCarousal";
 import PlacementsCarousal from "./placements/PlacementsCarousal";
-
-import HelpButton from "./HelpButton";
 import FAQ from "./FAQ";
 import AssuredFeatures from "./AssuredFeatures";
 
@@ -40,7 +38,6 @@ function HomePage() {
           <FAQ />
         </Container>
       </Box>
-      <HelpButton />
     </>
   );
 }
